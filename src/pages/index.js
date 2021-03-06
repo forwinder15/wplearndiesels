@@ -1,4 +1,6 @@
 import * as React from "react";
+import { Link as GatsbyLink }  from 'gatsby';
+import {Container, Stack, Text, Heading, Box, Link} from '@chakra-ui/react';
 
 const HomePage = () => {
   return(
@@ -11,7 +13,7 @@ const HomePage = () => {
              <span dangerouslySetInnerHTML={{__html: '<p>this is an exceprt</p>'}} />
 
          </Text> 
-         <Link as={GatsbyLink} to={#}>Read more</Link>
+         <Link as={GatsbyLink} to={'#'}>Read more</Link>
         </Box>
         <Box p={5} shadow={'md'} borderWidth={'1px'}>
            <Heading as={'h2'}>Hey there 2</Heading>
@@ -19,7 +21,7 @@ const HomePage = () => {
              <span dangerouslySetInnerHTML={{__html: '<p>this is an new exceprt</p>'}} />
 
          </Text> 
-         <Link as={GatsbyLink} to={#}>Read more</Link>
+         <Link as={GatsbyLink} to={'#'}>Read more</Link>
         </Box>
         </Stack> 
     </Container>
